@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #0f0e0f;
+  background-image: radial-gradient(4% 4% at center, #cccccc 1% 1%,#0000 50% 50%);
+  background-size: 50px 50px;
+  background-color: #0f0e0f;
 }
 
 h1{
