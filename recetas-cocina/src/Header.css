@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'A-Love-of-Thunder';
+    src:url('./fonts/A-Love-of-Thunder.ttf.woff') format('woff'),
+        url('./fonts/A-Love-of-Thunder.ttf.svg#A-Love-of-Thunder') format('svg'),
+        url('./fonts/A-Love-of-Thunder.ttf.eot'),
+        url('./fonts/A-Love-of-Thunder.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 { 
+   font-family: 'A-Love-of-Thunder';
+    color: #2044e3;
+}  
+#logo {
+    width: 10%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header div input, button {
+    border: none;
+    border-radius: 5px;
+    color: #6b757b;
+}
+header div input {
+    border-right: none !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    padding: 15px;
+    margin: 2% 0 2% 5%;
+    width: 80vw;
+}
+header div button {
+    cursor: pointer;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    padding: 15px;
+}
+#top-header *{
+    margin: 3% 0 0% 3%;
+}
+#top-header h1{
+    font-size: 3rem;
+}

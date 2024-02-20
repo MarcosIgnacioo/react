@@ -1,0 +1,37 @@
+[
+    {
+        "image": "https://www.kotufas.es/img/modulos/stock0000546/productos/or_Pop_Tarts_Cookies_and_Creme_galletas_oreo_americanas.jpg",
+        "name": "Whoreo",
+        "description": "Oreo poptarts ricas y saben a galleta"
+    },
+    {
+        "image": "https://www.kotufas.es/img/modulos/stock0000546/productos/or_Pop_Tarts_Frosted_Strawberry_KOTUFAS_LAGUNA_COTUFAS.jpg",
+        "name": "Fresa",
+        "description": "Son de fresa"
+    },
+    {
+        "image": "https://www.kotufas.es/img/modulos/stock0000546/productos/or_POP_TARTS_CHOCO_FUDGE_384GR.jpg",
+        "name": "Big Fudge Poptart",
+        "description": "Lawyered"
+    },
+    {
+        "image": "https://www.kotufas.es/img/modulos/stock0000546/productos/or_FROSTED_CHOCOLATE_CHIP.jpg",
+        "name": "Chocolate Chibi Robo",
+        "description": "Wozniaks love them"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/817LrkjP9vL.jpg",
+        "name": "Poptart",
+        "description": "No se"
+    },
+    {
+        "image": "https://popsamerica.com/200-large_default/pop-tarts-frosted-s-mores.jpg",
+        "name": "Huevoptart",
+        "description": "El huevo queda con todo"
+    },
+    {
+        "image": "https://www.myamericanmarket.com/media/catalog/product/cache/e14a284ad83acfa28068f240695baba3/k/e/kelloggs-pop-tarts-strawberry-384g-13.5oz-1.jpg",
+        "name": "Poptart de fresa",
+        "description": "No se de que es"
+    }
+]

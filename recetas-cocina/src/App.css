@@ -1,0 +1,18 @@
+html{
+    background-color: #dae1e6;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+}
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipes *{
+    width: 15vw; 
+}
+input:focus {
+  outline: 3px dotted #6d625e;
+}
