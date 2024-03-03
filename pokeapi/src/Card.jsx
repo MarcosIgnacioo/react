@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 import Pokemon from "./Pokemon";
 import './styles.css';
-const URL = `https://pokeapi.co/api/v2/pokemon?limit=500&offset=0`
+const URL = `https://pokeapi.co/api/v2/pokemon?limit=100&offset=0`
 function Card() {
     const [pokemon, setPokemon] = useState([])
     useEffect(() => {

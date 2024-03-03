@@ -2,7 +2,7 @@
 import './styles.css';
 function Pokemon(props) {
     return (
-        <div className='pokemon_card' onClick={() => {
+        <div className={`pokemon_card ${props.firstType}`} onClick={() => {
             PlayCry(props.cry)
         }}>
             <img src={props.sprite} alt="" />
