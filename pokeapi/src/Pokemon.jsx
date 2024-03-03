@@ -1,6 +1,10 @@
 //https://pokeapi.co/api/v2/pokemon-species <-- descripcion pokemon
 import './styles.css';
 function Pokemon(props) {
+    let secondTypeTag
+    if (props.secondType) {
+        secondTypeTag = <h1 className={props.secondType}> {UpperCaseFirstLetter(props.secondType)} </h1>
+    }
     return (
         <div className={`pokemon_card ${props.firstType}`} onClick={() => {
             PlayCry(props.cry)
@@ -10,7 +14,7 @@ function Pokemon(props) {
             <h1 className='pokemon_name'> {UpperCaseFirstLetter(props.name)} </h1>
             <div className='types_container'>
                 <h1 className={props.firstType}> {UpperCaseFirstLetter(props.firstType)} </h1>
-                <h1 className={props.secondType}> {UpperCaseFirstLetter(props.secondType)} </h1>
+                {secondTypeTag}
             </div>
         </div>
     )
