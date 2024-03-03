@@ -1,8 +1,8 @@
 :root {
-  --pokemon-color: #000;
+    --pokemon-color: #000;
 }
 .normal {
-  --pokemon-color: #a4acaf;
+    --pokemon-color: #a4acaf;
     background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #a4acaf;
@@ -17,7 +17,7 @@
 }
 
 .flying 	{
-  --pokemon-color: #3dc7ef;
+    --pokemon-color: #3dc7ef;
     background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #3dc7ef;
@@ -25,7 +25,7 @@
 }
 
 .poison 	{
-  --pokemon-color: #b97fc9;
+    --pokemon-color: #b97fc9;
     background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #b97fc9;
@@ -33,7 +33,7 @@
 }
 
 .ground 	{
-  --pokemon-color: #f7de3f;
+    --pokemon-color: #f7de3f;
     background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #f7de3f;
@@ -41,7 +41,7 @@
 }
 
 .rock 	{
-  --pokemon-color: #a38c21;
+    --pokemon-color: #a38c21;
     background: linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #a38c21;
@@ -49,7 +49,7 @@
 }
 
 .bug 	{
-  --pokemon-color: #729f3f;
+    --pokemon-color: #729f3f;
     background: linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #729f3f;
@@ -57,7 +57,7 @@
 }
 
 .ghost 	{
-  --pokemon-color: #7b62a3;
+    --pokemon-color: #7b62a3;
     background: linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #7b62a3;
@@ -65,7 +65,7 @@
 }
 
 .steel 	{
-  --pokemon-color: #9eb7b8;
+    --pokemon-color: #9eb7b8;
     background: linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #9eb7b8;
@@ -73,7 +73,7 @@
 }
 
 .fire 	{
-  --pokemon-color: #fd7d24;
+    --pokemon-color: #fd7d24;
     background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #fd7d24;
@@ -81,7 +81,7 @@
 }
 
 .water 	{
-  --pokemon-color: #4592c4;
+    --pokemon-color: #4592c4;
     background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #4592c4;
@@ -89,7 +89,7 @@
 }
 
 .grass 	{
-  --pokemon-color: #9bcc50;
+    --pokemon-color: #9bcc50;
     background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #9bcc50;
@@ -97,7 +97,7 @@
 }
 
 .electric 	{
-  --pokemon-color: #eed535;
+    --pokemon-color: #eed535;
     background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #eed535;
@@ -105,7 +105,7 @@
 }
 
 .psychic 	{
-  --pokemon-color: #f366b9;
+    --pokemon-color: #f366b9;
     background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #f366b9;
@@ -113,7 +113,7 @@
 }
 
 .ice 	{
-  --pokemon-color: #51c4e7;
+    --pokemon-color: #51c4e7;
     background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #51c4e7;
@@ -121,7 +121,7 @@
 }
 
 .dragon 	{
-  --pokemon-color: #53a4cf;
+    --pokemon-color: #53a4cf;
     background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #53a4cf;
@@ -129,7 +129,7 @@
 }
 
 .dark 	{
-  --pokemon-color: #707070;
+    --pokemon-color: #707070;
     background: linear-gradient(180deg, #707070 50%, #707070 50%);
     background-color: rgba(0, 0, 0, 0);
     background-color: #707070;
@@ -137,7 +137,7 @@
 }
 .fairy { 
     background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
-  --pokemon-color: #707070;
+    --pokemon-color: #707070;
     background-color: rgba(0, 0, 0, 0);
     background-color: #fdb9e9;
     color: #212121;
@@ -179,14 +179,15 @@ h1{
 
 .pokemon_card {
     color: black;
-    border: 5px solid var(--pokemon-color);
+    border-top: 5px solid var(--pokemon-color);
+    border-bottom: 5px solid var(--pokemon-color);
     flex: 1 0 15%; 
     display: flex;
     flex-direction: column;
     margin: 2%;
     padding: 1%;
     border-radius: 5px;
-    background: #e1e6ed;
+    background: #fff;
     cursor: pointer;
     transition: all 0.05s ease-in-out;
     box-shadow: rgba(0,0,0,.9);
