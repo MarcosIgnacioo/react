@@ -1,16 +1,15 @@
-import { useLayoutEffect } from 'react'
-import Card from './Card'
+import { useLayoutEffect } from "react";
+import Card from "./Card";
 
 function App() {
-    useLayoutEffect
-    return (
-        <>
-            <div className='pokedex'>
-                <Card />
-                <button id='more_pokemon' type="">More pokemon</button>
-            </div>
-        </>
-    )
+  useLayoutEffect;
+  return (
+    <>
+      <div className="pokedex">
+        <Card />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
