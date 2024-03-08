@@ -11,17 +11,7 @@ function Pokemon(props) {
     );
   }
   return (
-    <div
-      className={`pokemon_card ${props.firstType}`}
-      onClick={(e) => {
-        // PlayCry(props.cry);
-        // todo hacer que esto me de la card exacta nya
-        const pokemonCard = e.target;
-        console.log(pokemonCard);
-        // const pokemonStats = pokemonCard.querySelector(".pokemon-stats");
-        // pokemonStats.hidden = false;
-      }}
-    >
+    <div className={`pokemon_card ${props.firstType}`}>
       <img src={props.sprite} alt="" />
       <h1> No.{props.id}</h1>
       <h1 className="pokemon_name"> {UpperCaseFirstLetter(props.name)} </h1>
@@ -32,12 +22,30 @@ function Pokemon(props) {
         </h1>
         {secondTypeTag}
       </div>
-      <div className="pokemon-stats" hidden>
+      <button
+        type=""
+        className="stats-button"
+        onClick={(e) => {
+          const pokemonCard = e.target.parentNode;
+          const showButtonText = e.target.innerText;
+          const statsContainer = pokemonCard.querySelector(".pokemon-stats");
+          statsContainer.hidden = !statsContainer.hidden;
+          e.target.innerText = showButtonText.includes("more")
+            ? "Hide"
+            : "Show more";
+        }}
+      >
+        Show more
+      </button>
+      <div hidden className="pokemon-stats">
         <div className="stat-container">
           <h1>HP</h1>
-          <div className="indicator" id="hp-indicator" data-stat={props.hp}>
-            {props.hp}
-          </div>
+          <div
+            className="indicator"
+            id="hp-indicator"
+            data-stat={props.hp}
+          ></div>
+          <h1 className="stat-number">{props.hp}</h1>
         </div>
         <div className="stat-container">
           <h1>ATK</h1>
@@ -45,9 +53,8 @@ function Pokemon(props) {
             className="indicator"
             id="atk-indicator"
             data-stat={props.attack}
-          >
-            {props.attack}
-          </div>
+          ></div>
+          <h1 className="stat-number">{props.attack}</h1>
         </div>
         <div className="stat-container">
           <h1>SP.ATK</h1>
@@ -55,9 +62,8 @@ function Pokemon(props) {
             className="indicator"
             id="spatk-indicator"
             data-stat={props.specialAttack}
-          >
-            {props.specialAttack}
-          </div>
+          ></div>
+          <h1 className="stat-number">{props.specialAttack}</h1>
         </div>
         <div className="stat-container">
           <h1>DEF</h1>
@@ -65,9 +71,8 @@ function Pokemon(props) {
             className="indicator"
             id="def-indicator"
             data-stat={props.defense}
-          >
-            {props.defense}
-          </div>
+          ></div>
+          <h1 className="stat-number">{props.defense}</h1>
         </div>
         <div className="stat-container">
           <h1>SP.DEF</h1>
@@ -75,9 +80,8 @@ function Pokemon(props) {
             className="indicator"
             id="spdef-indicator"
             data-stat={props.specialDefense}
-          >
-            {props.specialDefense}
-          </div>
+          ></div>
+          <h1 className="stat-number">{props.specialDefense}</h1>
         </div>
         <div className="stat-container">
           <h1>SPEED</h1>
@@ -85,10 +89,10 @@ function Pokemon(props) {
             className="indicator"
             id="speed-indicator"
             data-stat={props.speed}
-          >
-            {props.speed}
-          </div>
+          ></div>
+          <h1 className="stat-number">{props.speed}</h1>
         </div>
+        <p className="pokemon-description">{props.description}</p>
       </div>
     </div>
   );

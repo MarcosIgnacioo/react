@@ -59,6 +59,7 @@ function Card() {
             defense={pkmn.defense}
             specialDefense={pkmn.specialDefense}
             speed={pkmn.speed}
+            description={pkmn.description}
           />
         ))}
       </div>
@@ -68,6 +69,7 @@ function Card() {
 
 async function FetchPokemonData(p) {
   const res = await fetch(p.url);
+
   const pokemonDataJson = await res.json();
   const { id, name, types, sprites, cries, stats } = pokemonDataJson;
   const sprite = sprites.other["official-artwork"].front_default;
@@ -84,6 +86,14 @@ async function FetchPokemonData(p) {
   } = firstTypeObject;
   const { type: { name: secondType } = { name: "" } } = secondTypeObject || {};
   const cry = cries.latest;
+
+  const pokemonSpeciesRes = await fetch(
+    `https://pokeapi.co/api/v2/pokemon-species/${id}`,
+  );
+  const pokemonSpeciesJson = await pokemonSpeciesRes.json();
+  const { flavor_text_entries: flavorTextEntries } = pokemonSpeciesJson;
+  const [englishFlavorText] = flavorTextEntries;
+  const { flavor_text: description } = englishFlavorText;
   return {
     id,
     name,
@@ -97,6 +107,7 @@ async function FetchPokemonData(p) {
     specialAttack,
     specialDefense,
     speed,
+    description,
   };
 }
 export default Card;

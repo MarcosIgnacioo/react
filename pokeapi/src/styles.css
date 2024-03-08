@@ -174,7 +174,6 @@ body {
 }
 h1{
   font-size: 3rem;
-  width: 20%;
 }
 
 .pokemon_card {
@@ -267,17 +266,45 @@ h1{
   width: 70%;
   color: #fff;
 }
+
+.pokemon-stats{
+  justify-content: space-evenly;
+  align-self: center;
+}
 .stat-container{
-  display: flex;
-  align-items: center;
-  padding: 1%;
-  font-size: 3rem;
+  display: grid;
+  grid-template-columns: 33% 43% 23%;
+}
+.stat-number {
+  margin-left: 10%;
+}
+.stat-container *{
+  font-size: 2rem;
+}
+
+.pokemon-description {
+  margin-top: 5%;
 }
 
 .indicator {
   background-color: red;
-  width: 150px;
+  width: 100%;
   height: 20px;
-  margin-left: 70px;
   border-radius: 5px;
+}
+.stats-button{
+  align-self: center;
+  width: fit-content;
+  margin: 10% 5% 5% 5%;
+  padding: 2%;
+  border: none;
+  border-radius: 5px;
+  background-color: #bd0d54;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+.pokemon-description{
+  font-size: 1.5rem;
 }
