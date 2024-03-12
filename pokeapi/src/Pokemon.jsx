@@ -29,7 +29,10 @@ function Pokemon(props) {
           const pokemonCard = e.target.parentNode;
           const showButtonText = e.target.innerText;
           const statsContainer = pokemonCard.querySelector(".pokemon-stats");
+          const statsNodeList = statsContainer.querySelectorAll(".indicator");
+          setBarColor(statsNodeList);
           statsContainer.hidden = !statsContainer.hidden;
+
           e.target.innerText = showButtonText.includes("more")
             ? "Hide"
             : "Show more";
@@ -100,6 +103,26 @@ function Pokemon(props) {
 
 function UpperCaseFirstLetter(text) {
   return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+function setBarColor(statsNodeList) {
+  console.log(statsNodeList);
+  for (const stat of statsNodeList) {
+    const statNum = parseInt(stat.getAttribute("data-stat"));
+    const barColor = getBarColor(statNum);
+    console.log(barColor);
+    stat.style.backGroundColor = barColor;
+  }
+}
+
+function getBarColor(statNum) {
+  statNum = Math.min(100, Math.max(0, statNum));
+
+  const red = 255 - statNum * 2.55;
+  const green = statNum * 2.55;
+
+  const color = `rgb(${red}, ${green}, 0)`;
+  return color;
 }
 
 function PlayCry(src) {
